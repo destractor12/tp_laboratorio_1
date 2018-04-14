@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "funciones.h"
-
-int menu(float numeroUno, float numeroDos)
+#include <stdio.h>
+int mostrarMenu(float numeroUno, float numeroDos)
 {
+        int opcion;
 
-        printf("1- Ingresar 1er operando (A= %f)\n",numeroUno);
-        printf("2- Ingresar 2do operando (B= %f)\n",numeroDos);
+        printf("1- Ingresar 1er operando (A= %f)\n",&numeroUno);
+        printf("2- Ingresar 2do operando (B= %f)\n",&numeroDos);
         printf("3- Calcular la suma (A+B)\n");
         printf("4- Calcular la resta (A-B)\n");
         printf("5- Calcular la division (A/B)\n");
@@ -14,7 +13,9 @@ int menu(float numeroUno, float numeroDos)
         printf("7- Calcular el factorial (A!)\n");
         printf("8- Calcular todas las operaciones\n");
         printf("9- Salir\n");
+        scanf("%d",&opcion);
 
+        return opcion;
 }
 
 float getfloat(char mensaje[])
@@ -24,15 +25,13 @@ float getfloat(char mensaje[])
     printf("%s",mensaje);
     scanf("%f",&numero);
 
-    return numero;
 }
-float Sumadeoperandos( float numeroUno,float numeroDos)
+float SumarOperandos( float numeroUno,float numeroDos)
 {
-    float suma=0;
 
-    suma=numeroUno+numeroDos;
-
-    return suma;
+   float Suma;
+    Suma=numeroUno + numeroDos;
+    printf("El resultado de la suma es: %f\n",Suma);
 }
 float restadeoperandos( float numeroUno,float numeroDos)
 {

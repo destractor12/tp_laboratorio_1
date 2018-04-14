@@ -9,52 +9,54 @@ int main()
     int opcion=0;
     float numeroUno;
     float numeroDos;
-    float resultado;
+    float suma;
+    float resta;
+    float multiplicacion;
+    float division;
 
 
 
 
     while(seguir=='s')
     {
-      opcion=menu(numeroUno, numeroDos);
+      fflush(stdin);
+      opcion=mostrarMenu(numeroUno,numeroDos);
 
-        scanf("%d",&opcion);
-        fflush(stdin);
 
         switch(opcion)
         {
-            case 1: numeroUno=getfloat("Ingrese el 1er operando:");
+            case 1: (numeroUno)=getfloat("Ingrese el 1er operando:");
             fflush(stdin);
 
-                break;
-            case 2: numeroDos=getfloat("Ingrese el 2do operando:");
+
+            case 2: (numeroDos)=getfloat("Ingrese el 2do operando:");
             fflush(stdin);
 
-                break;
-            case 3: resultado=Sumadeoperandos(numeroUno, numeroDos);
+
+            case 3: suma=SumarOperandos(numeroUno, numeroDos);
 
 
                 break;
-            case 4: resultado=restadeoperandos(numeroUno, numeroDos);
+            case 4: resta=restadeoperandos(numeroUno, numeroDos);
 
 
                 break;
-            case 5:resultado=multiplicaciondeoperandos(numeroUno, numeroDos);
+            case 5: multiplicacion=multiplicaciondeoperandos(numeroUno, numeroDos);
 
 
                 break;
-            case 6:resultado=divisiondeoperandos(numeroUno, numeroDos);
+            case 6: division=divisiondeoperandos(numeroUno, numeroDos);
 
 
                 break;
-            case 7:resultado=factorial();
+            case 7:/*resultado=factorial(numeroUno!numeroDos);*/
 
 
                 break;
-            case 8: resultado=Sumadeoperandos(numeroUno, numeroDos);
-            resultado=restadeoperandos(numeroUno, numeroDos);
-            resultado=multiplicaciondeoperandos(numeroUno, numeroDos);
-            resultado=divisiondeoperandos(numeroUno, numeroDos);
+            case 8: suma=SumarOperandos(numeroUno, numeroDos);
+            resta=restadeoperandos(numeroUno, numeroDos);
+            multiplicacion=multiplicaciondeoperandos(numeroUno, numeroDos);
+            division=divisiondeoperandos(numeroUno, numeroDos);
 
                 break;
             case 9:
@@ -62,7 +64,6 @@ int main()
                 seguir = 'n';
                 break;
         }
-    printf()
 
     return 0;
    }

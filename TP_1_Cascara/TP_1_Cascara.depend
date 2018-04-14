@@ -1,16 +1,14 @@
 # depslib dependency file v1.0
-1523653097 source:c:\users\nico\desktop\tp_1_cascara\funciones.c
+1523673934 source:c:\users\nico\desktop\tp_1_cascara\funciones.c
+	"funciones.h"
 	<stdio.h>
-	<stdlib.h>
-	<ctype.h>
 
-1523655225 source:c:\users\nico\desktop\tp_1_cascara\main.c
+1523673977 source:c:\users\nico\desktop\tp_1_cascara\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1523655616 c:\users\nico\desktop\tp_1_cascara\funciones.h
-	"funciones.c"
+1523672317 c:\users\nico\desktop\tp_1_cascara\funciones.h
 
 1523655509 c:\users\nico\desktop\tp_1_cascara\funciones.c
 	<stdio.h>

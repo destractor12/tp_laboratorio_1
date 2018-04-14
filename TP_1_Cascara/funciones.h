@@ -1,9 +1,9 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-#include "funciones.c"
-int menu(float, float );
+
+int mostrarMenu(float, float );
 float getfloat(char[]);
-float Sumadeoperandos(float, float);
+float SumarOperandos(float, float);
 float restadeoperandos(float,float);
 float multiplicaciondeoperandos(float,float);
 float divisiondeoperandos(float,float);
